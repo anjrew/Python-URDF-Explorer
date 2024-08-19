@@ -1,0 +1,6 @@
+[submodule "odio_urdf"]
+	path = odio_urdf
+	url = git@github.com:hauptmech/odio_urdf.git
+[submodule "amo_urdf"]
+	path = amo_urdf
+	url = git@github.com:ami-iit/amo_urdf.git
