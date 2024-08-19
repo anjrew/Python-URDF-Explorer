@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="wheel_model">
+
+    <!-- Import the wheel macro from another package -->
+    <xacro:include filename="./wheel_macro.xacro" />
+
+
+    <!-- Add a base_link (Gazebo requires a root link named base_link) -->
+    <link name="base_link"/>
+
+    <!-- Connect the wheel to the base_link -->
+    <joint name="base_to_wheel" type="fixed">
+        <parent link="base_link"/>
+        <child link="wheel"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <!-- Create the wheel instance -->
+    <xacro:wheel id="wheel" radius_m="1" width_m="1" mass_kg="1" />
+
+    <!-- Gazebo-specific properties -->
+    <gazebo reference="wheel">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+</robot>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:macro name="wheel" params="id radius_m width_m mass_kg">
+        <link name="${id}">
+            <visual>
+                <geometry>
+                    <cylinder length="${width_m}" radius="${radius_m}" />
+                </geometry>
+                <material name="wheel_tire" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder length="${width_m}" radius="${radius_m}" />
+                </geometry>
+            </collision>
+            <inertial>
+                <mass value="${mass_kg}"/>
+                <inertia ixx="${(1/12) * mass_kg * (3*radius_m*radius_m + width_m*width_m)}" ixy="0" ixz="0" iyy="${(1/12) * mass_kg * (3*radius_m*radius_m + width_m*width_m)}" iyz="0" izz="${(1/2) * mass_kg * radius_m*radius_m}" />
+            </inertial>
+        </link>
+    </xacro:macro>
+
+</robot>
