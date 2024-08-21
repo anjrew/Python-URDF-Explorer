@@ -989,7 +989,7 @@ class Collision(URDFType):
     }
     _TAG = 'collision'
 
-    def __init__(self, name, origin, geometry):
+    def __init__(self, name: str, geometry: Geometry, origin=None):
         self.geometry = geometry
         self.name = name
         self.origin = origin
