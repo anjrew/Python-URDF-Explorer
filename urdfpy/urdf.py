@@ -395,11 +395,11 @@ class Cylinder(URDFType):
         """list of :class:`~trimesh.base.Trimesh` : The triangular meshes
         that represent this object.
         """
-        if len(self._meshes) == 0:
+        if len(self._meshes or []) == 0:
             self._meshes = [trimesh.creation.cylinder(
                 radius=self.radius, height=self.length
             )]
-        return self._mesh
+        return self._meshes
 
     def copy(self, prefix='', scale=None):
         """Create a deep copy with the prefix applied to all names.
@@ -739,7 +739,7 @@ class Geometry(URDFType):
         """list of :class:`~trimesh.base.Trimesh` : The geometry's triangular
         mesh representation(s).
         """
-        return self.geometry.meshes
+        return self.geometry.meshes if self.geometry is not None else []
 
     def copy(self, prefix='', scale=None):
         """Create a deep copy with the prefix applied to all names.
