@@ -1,0 +1,7 @@
+geometry:
+  angles:
+    degrees_45: 0.785398163
+    degrees_90: 1.57079633
+    degrees_180: 3.14159265
+    degrees_270: 4.71238898
+    degrees_360: 6.28318531

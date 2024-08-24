@@ -26,15 +26,15 @@
       <mass value="1.0"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
-    <visual name="&lt;urdfpy.urdf.Material object at 0x7f67e14c0a90&gt;">
+    <visual name="&lt;urdfpy.urdf.Material object at 0x7fc969743460&gt;">
       <geometry>
-        <cylinder radius="0.1" length="0.1"/>
+        <cylinder radius="1.0" length="1.0"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
     </visual>
     <collision name="wheel_collision">
       <geometry>
-        <cylinder radius="0.1" length="0.1"/>
+        <cylinder radius="1.0" length="1.0"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
     </collision>
@@ -45,15 +45,15 @@
       <mass value="1.0"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
-    <visual name="&lt;urdfpy.urdf.Material object at 0x7f67e14c03d0&gt;">
+    <visual name="&lt;urdfpy.urdf.Material object at 0x7fc9697439d0&gt;">
       <geometry>
-        <cylinder radius="0.1" length="0.1"/>
+        <cylinder radius="1.0" length="1.0"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
     </visual>
     <collision name="wheel_collision">
       <geometry>
-        <cylinder radius="0.1" length="0.1"/>
+        <cylinder radius="1.0" length="1.0"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
     </collision>
@@ -64,15 +64,15 @@
       <mass value="1.0"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
-    <visual name="&lt;urdfpy.urdf.Material object at 0x7f67e14c0dc0&gt;">
+    <visual name="&lt;urdfpy.urdf.Material object at 0x7fc969743c40&gt;">
       <geometry>
-        <cylinder radius="0.1" length="0.1"/>
+        <cylinder radius="1.0" length="1.0"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
     </visual>
     <collision name="wheel_collision">
       <geometry>
-        <cylinder radius="0.1" length="0.1"/>
+        <cylinder radius="1.0" length="1.0"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
     </collision>
@@ -83,15 +83,15 @@
       <mass value="1.0"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
-    <visual name="&lt;urdfpy.urdf.Material object at 0x7f67e14c0e50&gt;">
+    <visual name="&lt;urdfpy.urdf.Material object at 0x7fc969743f10&gt;">
       <geometry>
-        <cylinder radius="0.1" length="0.1"/>
+        <cylinder radius="1.0" length="1.0"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
     </visual>
     <collision name="wheel_collision">
       <geometry>
-        <cylinder radius="0.1" length="0.1"/>
+        <cylinder radius="1.0" length="1.0"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
     </collision>
@@ -101,14 +101,14 @@
     <parent link="chassis"/>
     <child link="left_front_wheel"/>
     <axis xyz="1. 0. 0."/>
-    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="0.25 0.25 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
   <joint name="right_front_wheel_joint" type="revolute">
     <limit effort="1.0" velocity="1.0"/>
     <parent link="chassis"/>
     <child link="right_front_wheel"/>
     <axis xyz="1. 0. 0."/>
-    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <origin xyz="1.0 0.25 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
   <joint name="left_rear_wheel_joint" type="revolute">
     <limit effort="1.0" velocity="1.0"/>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot name="Axle column test">
+  <link name="LEFT_FRONT_axle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0001"/>
+      <inertia ixx="1.0277223333333336e-08" ixy="0.0" ixz="0.0" iyy="1.0277223333333336e-08" iyz="0.0" izz="1.3778000000000001e-10"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder radius="0.00166" length="0.035"/>
+      </geometry>
+      <material name="axle_color"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="LEFT_FRONT_axle_collision">
+      <geometry>
+        <cylinder radius="0.00166" length="0.035"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="LEFT_FRONT_steering_column">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0001"/>
+      <inertia ixx="1.9540750000000002e-08" ixy="0.0" ixz="0.0" iyy="1.9540750000000002e-08" iyz="0.0" izz="2e-10"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder radius="0.002" length="0.0483"/>
+      </geometry>
+      <material name="column_color"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="LEFT_FRONT_steering_column_collision">
+      <geometry>
+        <cylinder radius="0.002" length="0.0483"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <joint name="LEFT_FRONT_axle_to_LEFT_FRONT_steering_column_joint" type="revolute">
+    <limit effort="0.1" velocity="0.1" lower="-0.5235987755982988" upper="0.5235987755982988"/>
+    <parent link="LEFT_FRONT_steering_column"/>
+    <child link="LEFT_FRONT_axle"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <material name="axle_color">
+    <color rgba="0.5 0.5 0.5 1. "/>
+  </material>
+  <material name="column_color">
+    <color rgba="0.5 0.5 0.5 1. "/>
+  </material>
+</robot>
