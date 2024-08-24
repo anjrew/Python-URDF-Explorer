@@ -5,6 +5,8 @@ boticar:
     width_m: 0.16
     height_m: 0.062
     mass_kg: 1.7827
+    wheel_x_offset_from_edge_m: 0.06
+    wheelbase: 0.25
 
   wheel:
     dimeter_m: 0.053
@@ -20,6 +22,7 @@ boticar:
     length_m: 0.035
     diameter_m: 0.00332 # 5mm
     mass_kg: 0.0001
+    wheel_inset_m: 0.001 # mm How far the wheel is inset from end of the axle
 
   steering_column: # The vertical rod that the wheel spins on
     length_m: 0.04830 # Vertical hight of the steering rod
@@ -32,8 +35,6 @@ boticar:
 
 
   geometry:
-    wheelbase: 0.335
-    wheel_x_offset_from_edge_m: 0.06
     # same as wheel_x_offset_from_edge_m because the wheel is centered
     rotational_center_offset_m: 0.06 
     wheel_z_base_offset_m: 0.018
