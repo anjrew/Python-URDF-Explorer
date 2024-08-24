@@ -3,6 +3,7 @@ import copy
 import os
 import time
 
+import PIL.Image
 from lxml import etree as ET
 import networkx as nx
 import numpy as np
@@ -783,7 +784,7 @@ class Texture(URDFType):
 
     def __init__(self, filename, image=None):
         if image is None:
-            image = PIL.image.open(filename)
+            image = PIL.Image.open(filename)
         self.filename = filename
         self.image = image
 

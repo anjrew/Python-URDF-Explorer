@@ -1,5 +1,6 @@
 trimesh==3.23.5
 numpy==1.19.5
+pillow==10.4.0
 watchdog
 xacro
 pydantic
