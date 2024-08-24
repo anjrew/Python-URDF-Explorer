@@ -9,6 +9,10 @@ boticar:
     wheelbase: 0.25
     wheel_z_base_offset_m: 0.018
     steering_column_y_center_offset_m: 0.058 # How far from y center the steering column mount is
+    wheel_mounts:
+      length_m: 0.04830 # Vertical height of the wheel mounts
+      diameter_m: 0.004 # 4mm
+      mass_kg: 0.0001
 
   wheel:
     dimeter_m: 0.053
@@ -27,9 +31,6 @@ boticar:
     wheel_inset_m: 0.001 # mm How far the wheel is inset from end of the axle
 
   steering_column: # The vertical rod that the wheel spins on
-    length_m: 0.04830 # Vertical hight of the steering rod
-    diameter_m: 0.004 # 4mm
-    mass_kg: 0.0001
     max_angle_deg: 30
     effort_Nm: 0.1 # TODO: Find the correct value
     rads_per_sec: 0.1 # TODO: Find the correct value
