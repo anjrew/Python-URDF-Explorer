@@ -7,6 +7,8 @@ boticar:
     mass_kg: 1.7827
     wheel_x_offset_from_edge_m: 0.06
     wheelbase: 0.25
+    wheel_z_base_offset_m: 0.018
+    steering_column_y_center_offset_m: 0.058 # How far from y center the steering column mount is
 
   wheel:
     dimeter_m: 0.053
@@ -37,7 +39,6 @@ boticar:
   geometry:
     # same as wheel_x_offset_from_edge_m because the wheel is centered
     rotational_center_offset_m: 0.06 
-    wheel_z_base_offset_m: 0.018
 
   lidar:
     base:
