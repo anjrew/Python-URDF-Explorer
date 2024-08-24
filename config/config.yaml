@@ -33,7 +33,7 @@ boticar:
     max_angle_deg: 30
     effort_Nm: 0.1 # TODO: Find the correct value
     rads_per_sec: 0.1 # TODO: Find the correct value
-    camber_deg: 0 # TODO: Find the correct value
+    front_camber_deg: 0 # TODO: Find the correct value
 
 
   geometry:
