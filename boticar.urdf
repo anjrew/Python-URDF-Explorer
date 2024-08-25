@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot name="Chassis with left and right steering assembly_test">
+  <link name="right_front_axle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0001"/>
+      <inertia ixx="1.0277223333333336e-08" ixy="0.0" ixz="0.0" iyy="1.0277223333333336e-08" iyz="0.0" izz="1.3778000000000001e-10"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder radius="0.00166" length="0.035"/>
+      </geometry>
+      <material name="axle_color"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="right_front_axle_collision">
+      <geometry>
+        <cylinder radius="0.00166" length="0.035"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_front_shock_mount_column">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0001"/>
+      <inertia ixx="1.9540750000000002e-08" ixy="0.0" ixz="0.0" iyy="1.9540750000000002e-08" iyz="0.0" izz="2e-10"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder radius="0.002" length="0.0483"/>
+      </geometry>
+      <material name="shock_mount_column_color"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="right_front_shock_mount_column_collision">
+      <geometry>
+        <cylinder radius="0.002" length="0.0483"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_front">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0282"/>
+      <inertia ixx="6.3044624999999994e-06" ixy="0.0" ixz="0.0" iyy="6.3044624999999994e-06" iyz="0.0" izz="9.901724999999999e-06"/>
+    </inertial>
+    <visual name="&lt;urdfpy.urdf.Material object at 0x7fbc9d3d7340&gt;">
+      <geometry>
+        <cylinder radius="0.0265" length="0.024"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="wheel_collision">
+      <geometry>
+        <cylinder radius="0.0265" length="0.024"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_front_axle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0001"/>
+      <inertia ixx="1.0277223333333336e-08" ixy="0.0" ixz="0.0" iyy="1.0277223333333336e-08" iyz="0.0" izz="1.3778000000000001e-10"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder radius="0.00166" length="0.035"/>
+      </geometry>
+      <material name="axle_color"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="left_front_axle_collision">
+      <geometry>
+        <cylinder radius="0.00166" length="0.035"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_front_shock_mount_column">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0001"/>
+      <inertia ixx="1.9540750000000002e-08" ixy="0.0" ixz="0.0" iyy="1.9540750000000002e-08" iyz="0.0" izz="2e-10"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder radius="0.002" length="0.0483"/>
+      </geometry>
+      <material name="shock_mount_column_color"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="left_front_shock_mount_column_collision">
+      <geometry>
+        <cylinder radius="0.002" length="0.0483"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_front">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0282"/>
+      <inertia ixx="6.3044624999999994e-06" ixy="0.0" ixz="0.0" iyy="6.3044624999999994e-06" iyz="0.0" izz="9.901724999999999e-06"/>
+    </inertial>
+    <visual name="&lt;urdfpy.urdf.Material object at 0x7fbc94a8aac0&gt;">
+      <geometry>
+        <cylinder radius="0.0265" length="0.024"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="wheel_collision">
+      <geometry>
+        <cylinder radius="0.0265" length="0.024"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_rear">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0282"/>
+      <inertia ixx="6.3044624999999994e-06" ixy="0.0" ixz="0.0" iyy="6.3044624999999994e-06" iyz="0.0" izz="9.901724999999999e-06"/>
+    </inertial>
+    <visual name="&lt;urdfpy.urdf.Material object at 0x7fbc9d3d7880&gt;">
+      <geometry>
+        <cylinder radius="0.0265" length="0.024"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="wheel_collision">
+      <geometry>
+        <cylinder radius="0.0265" length="0.024"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_rear_axle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0001"/>
+      <inertia ixx="1.0277223333333336e-08" ixy="0.0" ixz="0.0" iyy="1.0277223333333336e-08" iyz="0.0" izz="1.3778000000000001e-10"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder radius="0.00166" length="0.035"/>
+      </geometry>
+      <material name="axle_color"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="right_rear_axle_collision">
+      <geometry>
+        <cylinder radius="0.00166" length="0.035"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_rear_shock_mount_column">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0001"/>
+      <inertia ixx="1.9540750000000002e-08" ixy="0.0" ixz="0.0" iyy="1.9540750000000002e-08" iyz="0.0" izz="2e-10"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder radius="0.002" length="0.0483"/>
+      </geometry>
+      <material name="shock_mount_column_color"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="right_rear_shock_mount_column_collision">
+      <geometry>
+        <cylinder radius="0.002" length="0.0483"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_rear">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0282"/>
+      <inertia ixx="6.3044624999999994e-06" ixy="0.0" ixz="0.0" iyy="6.3044624999999994e-06" iyz="0.0" izz="9.901724999999999e-06"/>
+    </inertial>
+    <visual name="&lt;urdfpy.urdf.Material object at 0x7fbc9d3d75e0&gt;">
+      <geometry>
+        <cylinder radius="0.0265" length="0.024"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="wheel_collision">
+      <geometry>
+        <cylinder radius="0.0265" length="0.024"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_rear_axle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0001"/>
+      <inertia ixx="1.0277223333333336e-08" ixy="0.0" ixz="0.0" iyy="1.0277223333333336e-08" iyz="0.0" izz="1.3778000000000001e-10"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder radius="0.00166" length="0.035"/>
+      </geometry>
+      <material name="axle_color"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="left_rear_axle_collision">
+      <geometry>
+        <cylinder radius="0.00166" length="0.035"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_rear_shock_mount_column">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0001"/>
+      <inertia ixx="1.9540750000000002e-08" ixy="0.0" ixz="0.0" iyy="1.9540750000000002e-08" iyz="0.0" izz="2e-10"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder radius="0.002" length="0.0483"/>
+      </geometry>
+      <material name="shock_mount_column_color"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="left_rear_shock_mount_column_collision">
+      <geometry>
+        <cylinder radius="0.002" length="0.0483"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="chassis">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.7827"/>
+      <inertia ixx="0.0043741515666666664" ixy="0.0" ixz="0.0" iyy="0.022022881566666663" iyz="0.0" izz="0.025254916666666665"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.38  0.16  0.062"/>
+      </geometry>
+      <material name="chassis_color"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="chassis_collision">
+      <geometry>
+        <box size="0.38  0.16  0.062"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <joint name="right_front_axle_to_right_front_shock_mount_column_joint" type="fixed">
+    <parent link="right_front_shock_mount_column"/>
+    <child link="right_front_axle"/>
+    <axis xyz="0. 1. 0."/>
+    <origin xyz="0.0175 0.0 0.0" rpy="0.0 1.5707963267948966 0.0"/>
+  </joint>
+  <joint name="right_front_to_right_front_axle_joint" type="continuous">
+    <parent link="right_front_axle"/>
+    <child link="right_front"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.004500000000000001" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="chassis_to_right_front_shock_mount_column_joint" type="revolute">
+    <limit effort="0.1" velocity="0.1" lower="-0.5235987755982988" upper="0.5235987755982988"/>
+    <parent link="chassis"/>
+    <child link="right_front_shock_mount_column"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.125 -0.058 -0.018" rpy="0.0 0.0 -1.5707963267948968"/>
+  </joint>
+  <joint name="left_front_axle_to_left_front_shock_mount_column_joint" type="fixed">
+    <parent link="left_front_shock_mount_column"/>
+    <child link="left_front_axle"/>
+    <axis xyz="0. 1. 0."/>
+    <origin xyz="0.0175 0.0 0.0" rpy="0.0 1.5707963267948966 0.0"/>
+  </joint>
+  <joint name="left_front_to_left_front_axle_joint" type="continuous">
+    <parent link="left_front_axle"/>
+    <child link="left_front"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.004500000000000001" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="chassis_to_left_front_shock_mount_column_joint" type="revolute">
+    <limit effort="0.1" velocity="0.1" lower="-0.5235987755982988" upper="0.5235987755982988"/>
+    <parent link="chassis"/>
+    <child link="left_front_shock_mount_column"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.125 0.058 -0.018" rpy="0.0 0.0 1.5707963267948966"/>
+  </joint>
+  <joint name="chassis_to_right_rear_shock_mount_column_joint" type="fixed">
+    <parent link="chassis"/>
+    <child link="right_rear_shock_mount_column"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.125 -0.058 -0.018" rpy="0.0 0.0 -1.5707963267948968"/>
+  </joint>
+  <joint name="right_rear_to_right_rear_axle_joint" type="continuous">
+    <parent link="right_rear_axle"/>
+    <child link="right_rear"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.004500000000000001" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="right_rear_axle_to_right_rear_shock_mount_column_joint" type="fixed">
+    <parent link="right_rear_shock_mount_column"/>
+    <child link="right_rear_axle"/>
+    <axis xyz="0. 1. 0."/>
+    <origin xyz="0.0175 0.0 0.0" rpy="0.0 1.5707963267948966 0.0"/>
+  </joint>
+  <joint name="chassis_to_left_rear_shock_mount_column_joint" type="fixed">
+    <parent link="chassis"/>
+    <child link="left_rear_shock_mount_column"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.125 0.058 -0.018" rpy="0.0 0.0 1.5707963267948966"/>
+  </joint>
+  <joint name="left_rear_to_left_rear_axle_joint" type="continuous">
+    <parent link="left_rear_axle"/>
+    <child link="left_rear"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.004500000000000001" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="left_rear_axle_to_left_rear_shock_mount_column_joint" type="fixed">
+    <parent link="left_rear_shock_mount_column"/>
+    <child link="left_rear_axle"/>
+    <axis xyz="0. 1. 0."/>
+    <origin xyz="0.0175 0.0 0.0" rpy="0.0 1.5707963267948966 0.0"/>
+  </joint>
+  <transmission name="right_front_to_right_front_axle_joint_transmission">
+    <joint name="right_front_to_right_front_axle_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="right_front_to_right_front_axle_joint_actuator">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </actuator>
+    <type>transmission_interface/SimpleTransmission</type>
+  </transmission>
+  <transmission name="left_front_to_left_front_axle_joint_transmission">
+    <joint name="left_front_to_left_front_axle_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="left_front_to_left_front_axle_joint_actuator">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </actuator>
+    <type>transmission_interface/SimpleTransmission</type>
+  </transmission>
+  <transmission name="chassis_to_left_front_shock_mount_column_joint_transmission">
+    <joint name="chassis_to_left_front_shock_mount_column_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="chassis_to_left_front_shock_mount_column_joint_actuator">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </actuator>
+    <type>transmission_interface/SimpleTransmission</type>
+  </transmission>
+  <transmission name="chassis_to_right_front_shock_mount_column_joint_transmission">
+    <joint name="chassis_to_right_front_shock_mount_column_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="chassis_to_right_front_shock_mount_column_joint_actuator">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </actuator>
+    <type>transmission_interface/SimpleTransmission</type>
+  </transmission>
+  <transmission name="right_rear_to_right_rear_axle_joint_transmission">
+    <joint name="right_rear_to_right_rear_axle_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="right_rear_to_right_rear_axle_joint_actuator">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </actuator>
+    <type>transmission_interface/SimpleTransmission</type>
+  </transmission>
+  <transmission name="left_rear_to_left_rear_axle_joint_transmission">
+    <joint name="left_rear_to_left_rear_axle_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="left_rear_to_left_rear_axle_joint_actuator">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </actuator>
+    <type>transmission_interface/SimpleTransmission</type>
+  </transmission>
+  <material name="axle_color">
+    <color rgba="0.5 0.5 0.5 1. "/>
+  </material>
+  <material name="shock_mount_column_color">
+    <color rgba="0.5 0.5 0.5 1. "/>
+  </material>
+  <material name="chassis_color">
+    <color rgba="0. 0. 0. 1."/>
+  </material>
+</robot>
