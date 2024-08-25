@@ -144,11 +144,11 @@ class WheelAssemblyURDFComponents:
 
 
 class TransmissionType(str, Enum):
-    SIMPLE = " SimpleTransmission"
-    DIFFERENTIAL = "DifferentialTransmission"
+    SIMPLE = "transmission_interface/SimpleTransmission"
+    DIFFERENTIAL = "transmission_interface/DifferentialTransmission"
 
 
 class HardwareInterfaceType(str, Enum):
-    EFFORT_JOINT = "EffortJointInterface"
-    POSITION_JOINT = "PositionJointInterface"
-    VELOCITY_JOINT = "VelocityJointInterface"
+    EFFORT_JOINT = "hardware_interface/EffortJointInterface"
+    POSITION_JOINT = "hardware_interface/PositionJointInterface"
+    VELOCITY_JOINT = "hardware_interface/VelocityJointInterface"
