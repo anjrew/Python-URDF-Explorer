@@ -2,7 +2,7 @@ from collections import OrderedDict
 import copy
 import os
 import time
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 import PIL.Image
 from lxml import etree as ET
@@ -780,7 +780,7 @@ class Texture(URDFType):
     _ATTRIBS = {"filename": (str, True)}
     _TAG = "texture"
 
-    def __init__(self, filename, image=None):
+    def __init__(self, filename: str, image: Optional[PIL.Image.Image] = None):
         if image is None:
             image = PIL.Image.open(filename)
         self.filename = filename
@@ -863,8 +863,16 @@ class Material(URDFType):
     }
     _TAG = "material"
 
-    def __init__(self, name, color=None, texture=None):
+    def __init__(
+        self,
+        name: str,
+        color: Optional[Tuple[float, float, float, float]],
+        texture: Optional[Texture] = None,
+    ):
         self.name = name
+
+        assert color is not None or texture is not None, \
+            "Either color or texture must be provided"
         self.color = color
         self.texture = texture
 
