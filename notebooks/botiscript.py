@@ -71,7 +71,7 @@ class Chassis(BaseModel):
     wheel_mounts: WheelMount = Field(..., description="Details for the wheel mounts properties")
 
 class Wheel(BaseModel):
-    dimeter_m: float = Field(..., description="Wheel diameter in meters")
+    diameter_m: float = Field(..., description="Wheel diameter in meters")
     width_m: float = Field(..., description="Wheel width in meters")
     mass_kg: float = Field(..., description="Wheel mass in kilograms")
 
@@ -357,7 +357,7 @@ def create_wheel_link(
     name: str,
     props: Wheel
 ) -> Link:
-    radius_m = props.dimeter_m / 2
+    radius_m = props.diameter / 2
     geo = Cylinder(radius_m, props.width_m)
     inertial_matrix =  ShapeInertias.get_uniform_cylinder_inertia(props.mass_kg, radius_m, props.width_m)
     return Link(

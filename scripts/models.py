@@ -39,7 +39,7 @@ class Chassis(BaseModel):
 
 
 class Wheel(BaseModel):
-    dimeter_m: float = Field(..., description="Wheel diameter in meters")
+    diameter_m: float = Field(..., description="Wheel diameter in meters")
     width_m: float = Field(..., description="Wheel width in meters")
     mass_kg: float = Field(..., description="Wheel mass in kilograms")
 
