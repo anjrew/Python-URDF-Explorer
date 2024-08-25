@@ -866,7 +866,7 @@ class Material(URDFType):
     def __init__(
         self,
         name: str,
-        color: Optional[Tuple[float, float, float, float]],
+        color: Optional[Tuple[float, float, float, float]] = None,
         texture: Optional[Texture] = None,
     ):
         self.name = name
